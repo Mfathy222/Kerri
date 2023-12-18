@@ -1,0 +1,273 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-color {
+    color: #e65f78;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    background-image: url(../images/header-bg.jpg);
+    min-height: 100vh;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #e65f78 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e65f78 !important;
+}
+
+.home-layer {
+    background-color: rgba(0, 0, 0, 0.697);
+}
+
+.home p {
+    max-width: 500px;
+}
+
+.home button {
+    border: 1px solid white;
+}
+
+.home .settings {
+    top: 18%;
+    background-color: #2b2424;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.home .up-icon {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    bottom: 5%;
+    animation: moving 1s linear infinite;
+}
+
+.home .up-icon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 7px;
+    background-color: white;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@keyframes moving {
+    0% {
+        bottom: 7%;
+    }
+
+    50% {
+        bottom: 5%;
+    }
+
+    100% {
+        bottom: 7%;
+    }
+}
+
+.home .mouse-icon {
+    right: 50px;
+    bottom: 30px;
+    background-color: #e65f78;
+    padding: 10px;
+}
+
+.home h1::after {
+    content: "A Graphic Designer.|";
+    animation: typing 2s linear 1s infinite alternate;
+}
+
+
+@keyframes typing {
+    0% {
+        content: "A|";
+    }
+
+    10% {
+        content: "A |";
+    }
+
+    20% {
+        content: "A G|";
+    }
+
+    30% {
+        content: "A Grap|";
+    }
+
+    40% {
+        content: "A Graphic|";
+    }
+
+    50% {
+        content: "A Graphic Desi|";
+    }
+
+    60% {
+        content: "A Graphic Desig|";
+    }
+
+    70% {
+        content: "A Graphic Design|";
+    }
+
+    80% {
+        content: "A Graphic Designer.|";
+    }
+
+    90% {
+        content: "A Graphic Designer.|";
+    }
+
+    100% {
+        content: "A Graphic Designer.|";
+    }
+}
+
+
+/********************************/
+.custom-width {
+    max-width: 500px;
+}
+
+.services .services-item {
+    border: 1px solid #e8e8e8;
+}
+
+.services .services-item h3::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: #e65f78;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.services .services-item:hover h3::after {
+    width: 100px;
+}
+
+/************************/
+.client .client-item i {
+    font-size: 40px;
+}
+
+
+.carousel-indicators button {
+    background-color: #e65f78 !important;
+    color: #e65f78 !important;
+}
+
+
+.carousel-indicators button {
+    width: 15px !important;
+    height: 5px !important;
+    border: 1px solid transparent !important;
+    border-radius: 5px !important;
+}
+
+.carousel-indicators button.active {
+    width: 30px !important;
+}
+
+
+/**************************/
+.works .works-layer {
+    background-color: rgba(0, 0, 0, 0.459);
+    transition: .5s;
+}
+
+.works .layer-content {
+    transition: .5s;
+}
+
+.works img {
+    transition: .5s;
+}
+
+
+.works .works-item:hover .works-layer {
+    opacity: 1 !important;
+}
+
+.works .works-item:hover .layer-content {
+    top: 0 !important;
+}
+
+.works .works-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.nav-pills .nav-link.active{
+    background-color: #e65f78;
+    border-radius: 20px;
+}
+
+.nav-pills .nav-link {
+    color: black;
+    border-radius: 20px;
+    
+}
+
+.nav-pills .nav-item{
+    padding: 0px 10px;
+}
+
+.nav-pills .nav-link:hover{
+    color: white !important;
+    background-color: #e65f78 !important;
+}
+
+/**************/
+.back{
+    background-color: #2b2424;
+    right: 30px;
+    top: -10px;
+    opacity: 0;
+    min-width: 150px;
+    padding: 10px;
+    transition: .5s;
+    border-radius: 5px;
+    cursor: auto;
+}
+
+.mouse-icon i:hover +.back{
+    opacity: 1;
+}
+
+.back::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    right: 0;
+    transform: translateX(100%);
+    background-color: #2b2424;
+    bottom: 3px;
+}
